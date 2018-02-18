@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/** @author ivanmoreno **/
+
+html, body {
+	margin:0px;
+	background-color: #000000;
+	overflow: hidden;
+	font-size: 0.9em;
+/*	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+*/	user-select: none;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+}
+
+#viewport {
+	position: absolute;
+	z-index: 1;
+}
+
+#progressBG {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 11;
+	opacity: 1.0;
+	background-color: #000000;
+}
+
+#progress {
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	z-index: 12;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate( -50%, -50% );
+	-moz-transform: translate( -50%, -50% );
+	-ms-transform: translate( -50%, -50% );
+	-o-transform: translate( -50%, -50% );
+	transform: translate( -50%, -50% );
+	opacity: 0.0;
+	color: #dbdbea;
+/*	font-size: 1.0em;
+*/	text-align: center;
+/*	pointer-events: none;
+*/}
+
+#barBG {
+	width: 150px;
+	height: 1px;
+	background-color: #474D56;
+	top: 28px;
+	left: 0px;
+	z-index: 13;
+	position: absolute;
+}
+
+#imageBar {
+	width: 0px;
+	height: 1px;
+	background-color: #dbdbea;
+	top: 28px;
+	left: 0px;
+	z-index: 14;
+	position: absolute;
+}
+
+#modelsBar {
+	width: 0px;
+	height: 1px;
+	background-color: #dbdbea;
+	top: 28px;
+	left: 150px;
+	z-index: 14;
+	position: absolute;
+}
+
+.t1, .t5 {
+	font-size: 0.7em;
+	font-family: 'Comfortaa', cursive;
+}
+
+.t1 {
+	margin-top: 108px;
+}
+
+.t2 {
+	margin-top: 10px;
+	font-size: 1.0em;
+	color: #dbdbea;
+	text-align: center;
+	letter-spacing: 15px;
+	text-transform: uppercase;
+	font-family: 'Comfortaa', cursive;
+}
+
+.t3, #mobileMessage {
+	font-size: 0.7em;
+	font-family: 'Comfortaa', cursive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.t3 {
+	margin-top: 5px;
+}
+
+.t4 {
+	margin-top: 3px;
+	color: #dbdbea;
+	font-size: 2.3em;
+	font-family: 'Poiret One', cursive;
+
+}
+
+.t5 {
+	margin-top: 18px;
+}
+
+#mobileMessage {
+	margin-top: -180px;
+}
+
+a {
+	color: #dbdbea;
+/*	cursor: pointer;
+*/	text-decoration: none;
+}
+
+a:hover {
+	color: #084f7a;
+/*	color: #5BBBF4;
+*/}
+
+#container {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+}
+
+#message {
+	color: #dbdbea;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	top: 50%;
+	-webkit-transform: translateY( -50% );
+	-moz-transform: translateY( -50% );
+	-ms-transform: translateY( -50% );
+	-o-transform: translateY( -50% );
+	transform: translateY( -50% );
+	position: absolute;
+}
+
+#bottomMenu {
+	position: absolute;
+	z-index: 3;
+	right: 5px;
+	top: 10px;
+	width: 50px;
+	height: 20px;
+}
+
+.guiButton {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	cursor: default;
+	z-index: 2;
+}
+
+.guiButton img {
+	width: 20px;
+	height: 20px;
+}
+
+.guiButton:hover {
+	cursor: pointer;
+}
